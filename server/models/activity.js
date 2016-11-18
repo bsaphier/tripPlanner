@@ -1,10 +1,14 @@
-const db = require('./index');
+const Sequelize = require('sequelize');
+const db = require('./db');
 
 const Activity = db.define('activity', {
-  name: {},
-  age_range: {}
+  name: {
+    type: Sequelize.STRING
+  },
+  age_range: {
+    type: Sequelize.ENUM,
+    values: ['All']
+  }
 });
 
-models.export = {
-  Activity
-};
+module.exports = Activity;
