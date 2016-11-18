@@ -20,9 +20,11 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
+app.use(express.static(path.join(__dirname, '../public')));
+app.use('/bootstrap', express.static(path.join(__dirname, '../node_modules/bootstrap/dist')));
+app.use('/jquery', express.static(path.join(__dirname, '../node_modules/jquery/dist')));
 app.use(routes);
 
-app.use(express.static(path.join(__dirname, '../public')));
 
 app.use((req, res, next) => {
   let err = new Error('Not Found');

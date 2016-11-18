@@ -1,28 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'layout.html' %}
 
-  <head>
-      <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-  </head>
+{% block title %}Your Trip{% endblock %}
 
-  <body>
-      <ul id="Hotels">
-        <li>
-          {{ templateHotels }}
-        </li>
-      </ul>
-
-      <ul id="Restaurants">
-        <li>
-          {{ templateRestaurants }}
-        </li>
-      </ul>
-
-      <ul id="Activities">
-        <li>
-          {{ templateActivities }}
-        </li>
-      </ul>
-  </body>
-
-</html>
+{% block content %}
+  <div id="app" class="clearfix">
+    <h1>Hello, I am the app!</h1>
+  </div>
+{% endblock %}
