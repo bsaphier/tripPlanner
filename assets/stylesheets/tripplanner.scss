@@ -7,19 +7,21 @@ $colHighlight : #9C82F1;
 .navbar, .navbar-default {
     background-color: $colDefault;
     border-color: $colHighlight;
-    border-bottom: 100px;
-
+    margin-bottom: 100px;
 }
 
 .btn, .btn-custom {
   background-color: $bgHighlight;
-  border-radius: 50%;
+}
 
+.row {
+  background-color: $bgHighlight;
+  opacity: 0.5;
 }
 
 #map-canvas {
-  height: 50vh;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   position:absolute;
   top: 0;
   left: 0;
@@ -27,5 +29,5 @@ $colHighlight : #9C82F1;
 }
 
 body {
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
