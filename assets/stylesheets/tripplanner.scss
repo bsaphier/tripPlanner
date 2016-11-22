@@ -1,8 +1,31 @@
-.navbar-nav {
-    color: #303a52;
+$bgDefault : #2F1092;
+$bgHighlight : #7550EA;
+$colDefault : #552BDC;
+$colHighlight : #9C82F1;
+
+
+.navbar, .navbar-default {
+    background-color: $colDefault;
+    border-color: $colHighlight;
+    border-bottom: 100px;
+
 }
 
-#googlemaps {
-  height: 100%;
+.btn, .btn-custom {
+  background-color: $bgHighlight;
+  border-radius: 50%;
+
+}
+
+#map-canvas {
+  height: 50vh;
   width: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+body {
+  padding-bottom: 70px;
 }

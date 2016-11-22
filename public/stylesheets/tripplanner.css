@@ -1,0 +1,19 @@
+.navbar, .navbar-default {
+  background-color: #552BDC;
+  border-color: #9C82F1;
+  border-bottom: 100px; }
+
+.btn, .btn-custom {
+  background-color: #7550EA;
+  border-radius: 50%; }
+
+#map-canvas {
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; }
+
+body {
+  padding-bottom: 70px; }
